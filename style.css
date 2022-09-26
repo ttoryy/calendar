@@ -1,0 +1,32 @@
+:root {
+    /* clolor */
+    --white-color: #ffff;
+    --black-color: #030303;
+    --background-color: #363d4e;
+    --point-color: #b588dd;
+    --light-color: #b589de;
+    --font-color: #9499a6;
+}
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+.main {
+    width: 100%;
+}
+
+.content-wrap {
+    display: flex;
+}
+
+.content-right {
+    color: var(--white-color);
+    width: 90%;
+}
