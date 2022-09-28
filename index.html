@@ -2,62 +2,62 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>calendar</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>calendar</title>
 </head>
 
 <body>
-    <div class="main">
-        <div class="content-wrap">
-            <div class="content-left">
-                <table id="calendar" align="center">
-                    <thead>
-                        <tr class="btn-wrap">
-                            <td>
-                                <label id="prev">
-                                    &#60;
-                                </label>
-                            </td>
-                            <td align="center" id="current-year-month" colspan="5"></td>
-                            <td>
-                                <label id="next">
-                                    &#62;
-                                </label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="sun" align="center">Sun</td>
-                            <td align="center">Mon</td>
-                            <td align="center">Tue</td>
-                            <td align="center">Wed</td>
-                            <td align="center">Thu</td>
-                            <td align="center">Fri</td>
-                            <td class="sat" align="center">Sat</td>
-                        </tr>
-                    </thead>
-                    <tbody id="calendar-body" class="calendar-body"></tbody>
-                </table>
-            </div>
-            <div class="content-right">
-                <div class="main-wrap">
-                    <div id="main-day" class="main-day"></div>
-                    <div id="main-date" class="main-date"></div>
-                </div>
-                <div class="todo-wrap">
-                    <div class="todo-title">Todo List</div>
-                    <div class="input-wrap">
-                        <input type="text" placeholder="write here!!" id="input-box" class="input-box">
-                        <button type="button" id="input-data" class="input-data">INPUT</button>
-                        <div id="input-list" class="input-list"></div>
-                    </div>
-                </div>
-
-            </div>
+  <div class="main">
+    <div class="content-wrap">
+      <div class="content-left">
+        <table id="calendar" align="center">
+          <thead>
+            <tr class="btn-wrap">
+              <td>
+                <button id="prev">
+                  &#60;
+                </button>
+              </td>
+              <td align="center" id="current-year-month" colspan="5"></td>
+              <td>
+                <button id="next">
+                  &#62;
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td align="center">Sun</td>
+              <td align="center">Mon</td>
+              <td align="center">Tue</td>
+              <td align="center">Wed</td>
+              <td align="center">Thu</td>
+              <td align="center">Fri</td>
+              <td align="center">Sat</td>
+            </tr>
+          </thead>
+          <tbody id="calendar-body" class="calendar-body"></tbody>
+        </table>
+      </div>
+      <div class="content-right">
+        <div class="main-wrap">
+          <div id="main-day" class="main-day"></div>
+          <div id="main-date" class="main-date"></div>
         </div>
+        <div class="todo-wrap">
+          <div class="todo-title">Todo List</div>
+          <div class="input-wrap">
+            <input type="text" placeholder="write here!!" id="input-box" class="input-box">
+            <button type="button" id="input-data" class="input-data">INPUT</button>
+            <div id="input-list" class="input-list"></div>
+          </div>
+        </div>
+
+      </div>
     </div>
+  </div>
 </body>
 <script src="main.js"></script>
 
