@@ -1,89 +1,88 @@
 :root {
-    /* clolor */
-    --white-color: #ffff;
-    --black-color: #030303;
-    --background-color: #363d4e;
-    --point-color: #b588dd;
-    --light-color: #b589de;
-    --font-color: #9499a6;
+  /* clolor */
+  --white-color: #ffff;
+  --black-color: #030303;
+  --background-color: #363d4e;
+  --point-color: #b588dd;
+  --light-color: #b589de;
+  --font-color: #9499a6;
 }
 
 * {
-    padding: 0%;
-    margin: 0%;
-    box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: var(--background-color);
+  background-color: var(--background-color);
 }
 
 .main {
-    width: 100%;
-    text-align: center;
+  width: 100%;
+  text-align: center;
 }
 
 .content-wrap {
-    display: flex;
+  display: flex;
 }
 
 .content-left {
-    color: var(--font-color);
-    float: left;
-    width: 50%;
-    padding: 10px;
-    background-color: #f9f9f9;
-    border-radius: 5px;
-
+  color: var(--font-color);
+  float: left;
+  width: 50%;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
 }
 
-.content-left table tr td {
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold;
+.day-of-the-week {
+  display: inline;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
-.btn-wrap {
-    font-size: 30px;
+th {
+  padding: 10px;
 }
 
 .content-right {
-    color: var(--white-color);
-    width: 50%;
-    height: 100%;
-    text-align: center;
-    font-size: 20px;
+  color: var(--white-color);
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  font-size: 20px;
 }
 
 .input-box {
-    width: 70%;
-    height: auto;
-    padding: 5px 5px 5px 5px;
-    border: 5px;
-    border-radius: 2px;
-    outline-style: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
+  width: 70%;
+  height: auto;
+  padding: 5px 5px 5px 5px;
+  border: 5px;
+  border-radius: 2px;
+  outline-style: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .input-data {
-    cursor: pointer;
-    font-size: 10px;
-    color: var(--white-color);
-    background-color: var(--background-color);
-    border-radius: 5px;
-    margin: 5px;
-    padding: 5px 5px 5px 5px;
+  cursor: pointer;
+  font-size: 10px;
+  color: var(--white-color);
+  background-color: var(--background-color);
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px 5px 5px 5px;
 }
 
 .input-data:hover {
-    background: var(--point-color);
-    color: #0b0809;
+  background: var(--point-color);
+  color: #0b0809;
 }
 
 .input-list {
-    list-style: none;
+  list-style: none;
 }

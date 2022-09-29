@@ -13,33 +13,40 @@
   <div class="main">
     <div class="content-wrap">
       <div class="content-left">
-        <table id="calendar" align="center">
-          <thead>
-            <tr class="btn-wrap">
-              <td>
-                <button id="prev">
-                  &#60;
-                </button>
-              </td>
-              <td align="center" id="current-year-month" colspan="5"></td>
-              <td>
-                <button id="next">
-                  &#62;
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td align="center">Sun</td>
-              <td align="center">Mon</td>
-              <td align="center">Tue</td>
-              <td align="center">Wed</td>
-              <td align="center">Thu</td>
-              <td align="center">Fri</td>
-              <td align="center">Sat</td>
-            </tr>
-          </thead>
-          <tbody id="calendar-body" class="calendar-body"></tbody>
-        </table>
+        <table id="calendar">
+          <div>
+            <button id="prev">&#60;</button>
+            <input type="number" id="year" value="2022" class=form-control>
+            <select id="month" class="form-control">
+              <option vlaue="1">January</option>
+              <option vlaue="2">February</option>
+              <option vlaue="3">March</option>
+              <option vlaue="4">April</option>
+              <option vlaue="5">May</option>
+              <option vlaue="6">June</option>
+              <option vlaue="7">July</option>
+              <option vlaue="8">August</option>
+              <option vlaue="9">September</option>
+              <option vlaue="10">October</option>
+              <option vlaue="11">November</option>
+              <option vlaue="12">December</option>
+            </select>
+            <button id="next">&#62;</button>
+          </div>
+          <table class="day-of-the-week">
+            <thead>
+              <tr>
+                <th>Sun</th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+                <th>Sat</th>
+              </tr>
+            </thead>
+            <tbody id="calendar-body" class="calendar-body"></tbody>
+          </table>
       </div>
       <div class="content-right">
         <div class="main-wrap">
@@ -54,7 +61,6 @@
             <div id="input-list" class="input-list"></div>
           </div>
         </div>
-
       </div>
     </div>
   </div>

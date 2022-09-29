@@ -1,6 +1,6 @@
 
 
-// 윤년
+// 윤년 
 function leapYear(year) {
   if (year % 400 == 0) {
     return true;
