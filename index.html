@@ -6,60 +6,62 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
   <title>calendar</title>
 </head>
 
 <body>
   <div class="main">
-    <div class="content-wrap">
-      <div class="content-left">
-        <table id="calendar">
-          <div>
-            <button id="prev">&#60;</button>
-            <input type="number" id="year" value="2022" class=form-control>
-            <select id="month" class="form-control">
-              <option vlaue="1">January</option>
-              <option vlaue="2">February</option>
-              <option vlaue="3">March</option>
-              <option vlaue="4">April</option>
-              <option vlaue="5">May</option>
-              <option vlaue="6">June</option>
-              <option vlaue="7">July</option>
-              <option vlaue="8">August</option>
-              <option vlaue="9">September</option>
-              <option vlaue="10">October</option>
-              <option vlaue="11">November</option>
-              <option vlaue="12">December</option>
-            </select>
-            <button id="next">&#62;</button>
-          </div>
-          <table class="day-of-the-week">
-            <thead>
-              <tr>
-                <th>Sun</th>
-                <th>Mon</th>
-                <th>Tue</th>
-                <th>Wed</th>
-                <th>Thu</th>
-                <th>Fri</th>
-                <th>Sat</th>
-              </tr>
-            </thead>
-            <tbody id="tb_body" class="tb_body"></tbody>
-          </table>
-      </div>
-      <div class="content-right">
-        <div class="main-wrap">
-          <div id="main-day" class="main-day"></div>
-          <div id="main-date" class="main-date"></div>
+    <div class="content-left">
+      <table id="calendar">
+        <div>
+          <button type="button"><i class="fa fa-chevron-left"></i></button>
+          <input type="number" id="year" value="2022" class=year />
+          <select id="month" class="month">
+            <option vlaue="1">January</option>
+            <option vlaue="2">February</option>
+            <option vlaue="3">March</option>
+            <option vlaue="4">April</option>
+            <option vlaue="5">May</option>
+            <option vlaue="6">June</option>
+            <option vlaue="7">July</option>
+            <option vlaue="8">August</option>
+            <option vlaue="9">September</option>
+            <option vlaue="10">October</option>
+            <option vlaue="11">November</option>
+            <option vlaue="12">December</option>
+          </select>
+          <button type="button"><i class="fa fa-chevron-right"></i></button>
         </div>
-        <div class="todo-wrap">
-          <div class="todo-title">Todo List</div>
-          <div class="input-wrap">
-            <input type="text" placeholder="write here!!" id="input-box" class="input-box">
-            <button type="button" id="input-data" class="input-data">INPUT</button>
-            <div id="input-list" class="input-list"></div>
-          </div>
+        <table class="day-of-the-week">
+          <thead>
+            <tr>
+              <th>Sun</th>
+              <th>Mon</th>
+              <th>Tue</th>
+              <th>Wed</th>
+              <th>Thu</th>
+              <th>Fri</th>
+              <th>Sat</th>
+            </tr>
+          </thead>
+          <tbody id="tb_body" class="tb_body"></tbody>
+        </table>
+    </div>
+    <div class="content-right">
+      <div class="main-wrap">
+        <div id="main-day" class="main-day"></div>
+        <div id="main-date" class="main-date"></div>
+      </div>
+      <div class="todo-wrap">
+        <div class="todo-title">Todo List</div>
+        <div class="input-wrap">
+          <input type="text" placeholder="write here!!" id="input-box" class="input-box">
+          <button type="button" id="input-data" class="input-data">INPUT</button>
+          <div id="input-list" class="input-list"></div>
         </div>
       </div>
     </div>

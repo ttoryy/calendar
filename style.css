@@ -21,9 +21,6 @@ body {
 .main {
   width: 100%;
   text-align: center;
-}
-
-.content-wrap {
   display: flex;
 }
 
