@@ -50,9 +50,24 @@ function changeYearMonth(year, month) {
   renderCaleandar(arr_caleandar);
 }
 
+//캘린더 띄우기
 function renderCaleandar(data) {
+  let h = [];
+  for (let i = 0; i < data.length; i++) {
+    if (i == 0) {
+      h.push('<tr>');
+    } else if (i % 7 == 0) {
+      h.push('</tr>');
+      h.push('<tr>');
+    }
+    h.push('<td>' + data[i] + '</td>');
+  }
+  h.push('</tr>');
 
+  $("#tb_body").html(h.join(""));
 }
 
-// renderCaleandar 부터 시작하기
+changeYearMonth(2022, 12);
+
+//renderCalendar 작동안함, 
 
