@@ -22,7 +22,7 @@ function getFirstDayOfWeek(year, month) {
 function changeYearMonth(year, month) {
   let monthDay = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
-  // 2월 윤년
+  // 2월 윤년 반영
   if (month == 2) {
     if (leapYear(year)) monthDay[1] = 29;
   }
@@ -64,14 +64,13 @@ function renderCaleandar(data) {
   $("#tb_body").html(h.join(""));
 }
 
-// 캘린더 인풋과 일치하게 
+// 캘린더 인풋과 일치하게 만들기
 let current_year = (new Date()).getFullYear();
 let current_month = (new Date()).getMonth() + 1;
 
 $("#year").val(current_year);
 $("#month").val(current_month);
 
-changeYearMonth(2022, 12);
+changeYearMonth(current_year, current_month);
 
 // 인풋에 month가 안뜸 
-
