@@ -18,9 +18,9 @@
     <div class="content-left">
       <table id="calendar">
         <div>
-          <button type="button"><i class="fa fa-chevron-left"></i></button>
+          <button type="button" onclick="changeMonth(-1);"><i class="fa fa-chevron-left"></i></button>
           <input type="number" id="year" value="2022" class=year />
-          <select id="month" class="month">
+          <select id="month" class="month" onchange="changeMonth();">
             <option vlaue="1">1</option>
             <option vlaue="2">2</option>
             <option vlaue="3">3</option>
@@ -34,7 +34,7 @@
             <option vlaue="11">11</option>
             <option vlaue="12">12</option>
           </select>
-          <button type="button"><i class="fa fa-chevron-right"></i></button>
+          <button type="button" onclick="changeMonth(+1);"><i class="fa fa-chevron-right"></i></button>
         </div>
         <table class="day-of-the-week">
           <thead>

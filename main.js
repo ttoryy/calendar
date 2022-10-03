@@ -64,6 +64,30 @@ function renderCaleandar(data) {
   $("#tb_body").html(h.join(""));
 }
 
+//
+function changeMonth(diff) {
+  if (diff == undefined) { // select box에서 선택했을때
+    current_month = parseInt($(month).val());
+  } else { // 버튼 눌렀을때
+    current_month = current_month + diff;
+
+    if (current_month == 0) { // 해가 바뀔때
+      current_year = current_year - 1;
+      current_month = 12;
+    } else if (current_month == 13) {
+      current_year = current_year + 1;
+      current_month = 1;
+    }
+  }
+  loadCalendar();
+}
+
+function loadCalendar() {
+  $("#year").val(current_year);
+  $("#month").val(current_month);
+  changeYearMonth(current_year, current_month);
+}
+
 // 캘린더 인풋과 일치하게 만들기
 let current_year = (new Date()).getFullYear();
 let current_month = (new Date()).getMonth() + 1;
@@ -73,4 +97,5 @@ $("#month").val(current_month);
 
 changeYearMonth(current_year, current_month);
 
-// 인풋에 month가 안뜸 
+
+//
