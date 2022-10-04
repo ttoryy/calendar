@@ -64,7 +64,7 @@ function renderCaleandar(data) {
   $("#tb_body").html(h.join(""));
 }
 
-//
+// 월 바꾸기
 function changeMonth(diff) {
   if (diff == undefined) { // select box에서 선택했을때
     current_month = parseInt($(month).val());
@@ -97,5 +97,19 @@ $("#month").val(current_month);
 
 changeYearMonth(current_year, current_month);
 
+// 날짜를 표시하는 함수
+function showDate() {
+  $('')
+}
 
-//
+// 날짜를 클릭하면 todo에 표시
+function clickDate() {
+  $('td').click(function () {
+    $('td').val(showDate);
+  })
+
+  clickDate();
+}
+
+
+// 날짜 클릭시 화면에 띄우기, 달력 월 바뀔때 밑에만 움직이게하기
