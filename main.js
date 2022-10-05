@@ -99,13 +99,13 @@ changeYearMonth(current_year, current_month);
 
 // 날짜를 표시하는 함수
 function showDate() {
-  $('')
+
 }
 
 // 날짜를 클릭하면 todo에 표시
 function clickDate() {
-  $('td').click(function () {
-    $('td').val(showDate);
+  $('<td>').click(function () {
+    $('<td>').val(showDate);
   })
 
   clickDate();
