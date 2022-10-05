@@ -57,7 +57,7 @@ function renderCaleandar(data) {
       h.push('</tr>');
       h.push('<tr>');
     }
-    h.push('<td>' + data[i] + '</td>');
+    h.push('<td class="day">' + data[i] + '</td>');
   }
   h.push('</tr>');
 
@@ -98,18 +98,12 @@ $("#month").val(current_month);
 changeYearMonth(current_year, current_month);
 
 // 날짜를 표시하는 함수
-function showDate() {
-
+function showDate(data) {
 }
 
 // 날짜를 클릭하면 todo에 표시
-function clickDate() {
-  $('<td>').click(function () {
-    $('<td>').val(showDate);
-  })
-
-  clickDate();
-}
-
+$('td.day').click(function () {
+  let showDate = $('<td.day>')
+})
 
 // 날짜 클릭시 화면에 띄우기, 달력 월 바뀔때 밑에만 움직이게하기
