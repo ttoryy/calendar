@@ -57,12 +57,16 @@ function renderCaleandar(data) {
       h.push('</tr>');
       h.push('<tr>');
     }
-    h.push('<td class="day">' + data[i] + '</td>');
+    h.push('<td>' + data[i] + '</td>');
   }
   h.push('</tr>');
 
   $("#tb_body").html(h.join(""));
 }
+
+$("#tb_body").click(function () {
+  renderCaleandar(date).html(join("#todo-date"));
+});
 
 // 월 바꾸기
 function changeMonth(diff) {
@@ -97,20 +101,4 @@ $("#month").val(current_month);
 
 changeYearMonth(current_year, current_month);
 
-// 날짜를 표시하는 함수
-function showDate(data) {
-}
-
-// 날짜를 클릭하면 todo에 표시
-$('td.day').click(function () {
-  let showDate = $('<td.day>')
-})
-
-// todo
-const toDoForm = document.querySelector(".input-box"),
-  toDoInput = toDoForm.querySelector("input-data"),
-  toDoList = document.querySelector(".input-list")
-
-
-
-// 날짜 클릭시 화면에 띄우기, 달력 월 바뀔때 밑에만 움직이게하기
+// 날짜를 클릭하면 todo에 표시....
