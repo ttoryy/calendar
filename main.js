@@ -106,4 +106,11 @@ $('td.day').click(function () {
   let showDate = $('<td.day>')
 })
 
+// todo
+const toDoForm = document.querySelector(".input-box"),
+  toDoInput = toDoForm.querySelector("input-data"),
+  toDoList = document.querySelector(".input-list")
+
+
+
 // 날짜 클릭시 화면에 띄우기, 달력 월 바뀔때 밑에만 움직이게하기
