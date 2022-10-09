@@ -62,11 +62,14 @@ function renderCaleandar(data) {
   h.push('</tr>');
 
   $("#tb_body").html(h.join(""));
+
+  $(renderCaleandar(data)).click(function () {
+    let show_Date = parseInt($('<td>' + data[i]) + '</td>'.val())
+    $(".show-date").val(show_Date);
+  });
 }
 
-$("push-td").click(function () {
-  $(".main-day").text("push-td").val;
-});
+
 
 // 월 바꾸기
 function changeMonth(diff) {
