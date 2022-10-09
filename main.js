@@ -64,8 +64,8 @@ function renderCaleandar(data) {
   $("#tb_body").html(h.join(""));
 }
 
-$("#tb_body").click(function () {
-  renderCaleandar(date).html(join("#todo-date"));
+$("push-td").click(function () {
+  $(".main-day").text("push-td").val;
 });
 
 // 월 바꾸기
