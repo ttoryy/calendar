@@ -64,11 +64,9 @@ function renderCaleandar(data) {
   $("#tb_body").html(h.join(""));
 }
 
-function showMain() {
-  mainDay.HTML = dayList[today.getDay()];
-  mainDate.HTML = today.getDate();
-}
-
+$('#tb_body').on('click','td', function() {
+  $("#todo-date").prepend('<td>').val;
+});
 
 // 월 바꾸기
 function changeMonth(diff) {
