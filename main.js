@@ -63,11 +63,11 @@ function renderCaleandar(data) {
 
   $("#tb_body").html(h.join(""));
 }
-let i = 0;
-$('<td>').on("click", function () {
-  $('#todo-date').after('<span>' + (++i) + '</span>'.val);
-})
 
+function showMain() {
+  mainDay.HTML = dayList[today.getDay()];
+  mainDate.HTML = today.getDate();
+}
 
 
 // 월 바꾸기
