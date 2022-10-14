@@ -62,10 +62,13 @@ function renderCaleandar(data) {
   h.push('</tr>');
 
   $("#tb_body").html(h.join(""));
+
+  
 }
 
+//달력 날짜 클릭시 todo-date에 출력
 $('#tb_body').on('click','td', function() {
-  $("#todo-date").prepend('<td>').val;
+  $("#todo-date").append($(this).text());
 });
 
 // 월 바꾸기
@@ -101,4 +104,4 @@ $("#month").val(current_month);
 
 changeYearMonth(current_year, current_month);
 
-// 날짜 value 뜨게하기, 잔디안심어지냐왜?
+// 날짜 value 뜨게하기
