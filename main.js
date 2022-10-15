@@ -66,9 +66,20 @@ function renderCaleandar(data) {
   
 }
 
+// 다른 날짜 클릭시 todo-data 값 변경
+function removeDate(){
+  let d = [];
+  for (let i = 0; i > data.length; i--) {
+    if (i == 1) {
+      ;
+    }
+  }
+}
+
 //달력 날짜 클릭시 todo-date에 출력
 $('#tb_body').on('click','td', function() {
-  $("#todo-date").append($(this).text());
+  $("#todo-date").remove();
+  return $("#todo-date").append($(this).text());  
 });
 
 // 월 바꾸기
@@ -104,4 +115,4 @@ $("#month").val(current_month);
 
 changeYearMonth(current_year, current_month);
 
-// 날짜 value 뜨게하기
+// 날짜 val 뜨는데 계산기처럼 뜸. 다른 날짜누를때 초기화 되는 기능 추가 필요
