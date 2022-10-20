@@ -66,20 +66,9 @@ function renderCaleandar(data) {
   
 }
 
-// 다른 날짜 클릭시 todo-data 값 변경
-function removeDate(){
-  let d = [];
-  for (let i = 0; i > data.length; i--) {
-    if (i == 1) {
-      ;
-    }
-  }
-}
-
 //달력 날짜 클릭시 todo-date에 출력
 $('#tb_body').on('click','td', function() {
-  $("#todo-date").remove();
-  return $("#todo-date").append($(this).text());  
+  $("#todo-date").empty($(this).text()).append($(this).text());  
 });
 
 // 월 바꾸기
