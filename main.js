@@ -63,12 +63,12 @@ function renderCaleandar(data) {
 
   $("#tb_body").html(h.join(""));
 
-  
+
 }
 
-//달력 날짜 클릭시 todo-date에 출력
-$('#tb_body').on('click','td', function() {
-  $("#todo-date").empty($(this).text()).append($(this).text());  
+//달력 날짜 클릭시 todo-date에 출력, 이전 클릭 숫자 삭제 > 생성
+$('#tb_body').on('click', 'td', function () {
+  $("#todo-date").empty($(this).text()).append($(this).text());
 });
 
 // 월 바꾸기
@@ -104,4 +104,14 @@ $("#month").val(current_month);
 
 changeYearMonth(current_year, current_month);
 
-// 날짜 val 뜨는데 계산기처럼 뜸. 다른 날짜누를때 초기화 되는 기능 추가 필요
+// enter쳐서 todo-list에 task 추가, 작동안됨
+$(".input-data").on("keyup",function(e){
+  if(e.keyCode == 13 && $(".input-data").val() != ""){
+    var task = $('<div class="task"></div>').text($(".input-data").val());
+    $(".list").append(task);
+  }
+});
+
+// 체크 버튼 클릭 시 줄 긋기
+
+// 삭제 버튼
