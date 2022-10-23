@@ -93,7 +93,6 @@ td {
   width: 50%;
   height: 100%;
   text-align: center;
-  font-size: 40px;
   font-weight: bolder;
   padding: 20px;
 }
@@ -136,6 +135,23 @@ td {
   color: #0b0809;
 }
 
-.input-list {
-  list-style: none;
+h3{
+  margin: 30px 0;
+}
+.task{
+  width:100%;
+  background: rgba(255,255,255,0.5);
+  padding: 18px;
+  margin: 6px 0;
+  overflow: hidden;
+  border-radius: 3px;
+}
+.task i{
+  float: right;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.done .task{
+  background: rgba(0,0,0,0.5);
+  color : #fff;
 }

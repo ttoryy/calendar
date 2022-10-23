@@ -105,13 +105,16 @@ $("#month").val(current_month);
 changeYearMonth(current_year, current_month);
 
 // enter쳐서 todo-list에 task 추가, 작동안됨
-$(".input-data").on("keyup",function(e){
-  if(e.keyCode == 13 && $(".input-data").val() != ""){
-    var task = $('<div class="task"></div>').text($(".input-data").val());
-    $(".list").append(task);
+$(".input-box").on("keyup",function(e){
+  if(e.keyCode == 13 && $(".input-box").val() != ""){
+    var task = $('<div class="task"></div>').text($(".input-box").val());
+    $(".notdone").append(task);
+    $(".input-box").val("");
   }
 });
 
 // 체크 버튼 클릭 시 줄 긋기
 
 // 삭제 버튼
+
+// 리스트 추가하면 잠깐 리스트 떴다가 사라지는데 왜그러세요????
