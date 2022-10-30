@@ -63,7 +63,6 @@ function renderCaleandar(data) {
 
   $("#tb_body").html(h.join(""));
 
-
 }
 
 //달력 날짜 클릭시 todo-date에 출력, 이전 클릭 숫자 삭제 > 생성
@@ -109,10 +108,12 @@ $(".input-box").on("keyup",function(e){
   if(e.keyCode == 13 && $(".input-box").val() != ""){
     var task = $('<div class="task"></div>').text($(".input-box").val());
     $(".notdone").append(task);
+    var finish = $("<button>✔️</button>");
+    $(task).append(finish);
+    var del = $("<button>🗑</button>");
+    $(task).append(del);
     $(".input-box").val("");
-  }
+  };
 });
 
 // 체크 버튼 클릭 시 줄 긋기
-
-// 삭제 버튼
